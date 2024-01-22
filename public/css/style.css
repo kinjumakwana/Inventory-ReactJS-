@@ -1,0 +1,47 @@
+.bg-dark {
+  background-color: #1d3244 !important;
+}
+
+/* start autocomplete */
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  background-color: white;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: auto;
+  overflow-y: auto;
+  padding-left: 0;
+  width: 400px;
+  position: absolute;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+  z-index: 2;
+  
+}
+
+.suggestions ul {
+  z-index: 2;
+  
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  /* background-color: #008f68; 
+  color: #190a9c;*/
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+/* end autocomplete */
